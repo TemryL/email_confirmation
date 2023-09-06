@@ -29,7 +29,7 @@ function displayResult(result, err) {
         window.location.href = 'HandFaceCollect://success';
     }
     else if (result === "error") {
-        message.innerText = "Unable to register this user. Please try again to register. " + err;
+        message.innerText = "Unable to register this user. Please try again to register." + err;
         window.location.href = 'HandFaceCollect://error';
     }
 }
