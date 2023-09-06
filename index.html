@@ -26,6 +26,7 @@ function displayResult(result, err) {
     const message = document.getElementById("message");
     if (result === "success") {
         message.innerText = "Your E-mail address has been verified.\n\n You may close this page. Thank you.";
+        window.location.href = 'hhttps://www.youtube.com/';
     }
     else if (result === "error") {
         message.innerText = "Unable to register this user. Please try again to register. " + err;
