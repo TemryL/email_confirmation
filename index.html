@@ -3,7 +3,7 @@
 <script src="https://unpkg.com/realm-web/dist/bundle.iife.js"></script>
 <script>
 
-const APP_ID = "handfacecollect-uwujv";
+const APP_ID = "eyerub-zqdmx";
 const app = new Realm.App({ id: APP_ID});
 
 //Grab Tokens
@@ -26,11 +26,11 @@ function displayResult(result, err) {
     const message = document.getElementById("message");
     if (result === "success") {
         message.innerText = "Your E-mail address has been verified.\n\n You may close this page. Thank you.";
-        window.location.href = 'HandFaceCollect://email_confirmation/success';
+        window.location.href = 'EyeRub://email_confirmation/success';
     }
     else if (result === "error") {
         message.innerText = "Unable to register this user. Please try again to register." + err;
-        window.location.href = 'HandFaceCollect://email_confirmation/error';
+        window.location.href = 'EyeRub://email_confirmation/error';
     }
 }
 </script>
@@ -46,7 +46,7 @@ function displayResult(result, err) {
 </head>
 
 <body>
-    <h1>HandFaceCollect</h1>
+    <h1>EyeRub</h1>
     <h5 id = "message"></h5>
 </body>
 
